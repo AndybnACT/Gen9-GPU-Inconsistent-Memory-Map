@@ -473,7 +473,7 @@ static int getphys_init(void){
                         return ret;
                 }
         }
-        entry = proc_create("test_swq_file", 666, NULL, &gp_file_ops);
+        entry = proc_create("ppgtt", 666, NULL, &gp_file_ops);
         if (!entry) 
                 return -ENOMEM;
         
